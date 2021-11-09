@@ -14,6 +14,9 @@ li{
   border: 1.5px solid darkblue;
   cursor: pointer;
 }
+li:hover{
+  background-color: orange;
+}
 
 
   

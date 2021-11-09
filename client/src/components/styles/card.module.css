@@ -5,6 +5,9 @@
     margin: 8px;
     padding: 5px;
 }
+.contenedor:hover{
+    background-color:navajowhite;
+}
 
 .diettype {
     background-color:aqua;
