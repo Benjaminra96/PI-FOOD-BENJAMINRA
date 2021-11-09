@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRecipes, filterRecipesByDiet, filterCreated, orderByScore, orderByAlphabetics } from '../actions';
@@ -12,6 +12,7 @@ import styles from '../components/styles/home.module.css'
 export default function Home() {
     const dispatch = useDispatch()
     const allRecipes = useSelector((state) => state.recipes)
+    // eslint-disable-next-line 
     const [orden, setOrden] = useState('')
     const [currentPage, setCurrentPage] = useState(1)
     const [recipesPerPage, setRecipesPerPage] = useState(9)

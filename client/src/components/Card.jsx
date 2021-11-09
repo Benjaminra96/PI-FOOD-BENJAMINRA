@@ -7,7 +7,7 @@ export default function Card( { name, image, diets }) {
         <div>
             <h1 className={styles.title}>{name}</h1>
             <h5 className={styles.diettype}>Diet type: {diets && diets.length ? diets : 'N/A'}</h5>
-            <img className={styles.pic} src={image} width='280px' height='280px'/>
+            <img className={styles.pic} src={image} alt='' width='280px' height='280px'/>
         </div>
         </div>
     );

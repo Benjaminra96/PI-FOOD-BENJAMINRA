@@ -11,7 +11,7 @@ export default function Paginado({ recipesPerPage, allRecipes, paginado }) {
     }
     return (
         <nav>
-            <ul className='paginado' className={styles.paginado}>
+            <ul className={styles.paginado}>
                 {pageNumbers && pageNumbers.map(number => (
                     <li className='number' key={number}>
                         <a onClick={() => paginado(number)}>{number}</a>

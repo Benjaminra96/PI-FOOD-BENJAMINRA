@@ -1,8 +1,9 @@
 const { Router } = require('express');
 const axios = require('axios');
-const { API_KEY } = process.env;
 const { Recipe, DietType } = require('../db');
-const Sequelize = require('sequelize')
+const Sequelize = require('sequelize');
+// const { key } = process.env ;
+
 
 
 const router = Router();
@@ -11,7 +12,7 @@ const Op = Sequelize.Op
 
 
 const getApiInfo = async () => {
-    const apiUrl = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100`);
+    const apiUrl = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=bcef0f20f7e141d3a23542f1f776d7d7&addRecipeInformation=true&number=100`);
 
     const apiInfo = apiUrl.data.results.map(obj => {
         return {
@@ -73,7 +74,7 @@ router.get('/recipes/:id', async (req, res) => {
 });
 
 router.get('/types', async (req, res) => {
-    const allData = await axios.get(`https://api.spoonacular.com/recipes/complexSearch/?apiKey=${API_KEY}&addRecipeInformation=true&number=100`);
+    const allData = await axios.get(`https://api.spoonacular.com/recipes/complexSearch/?apiKey=bcef0f20f7e141d3a23542f1f776d7d7&addRecipeInformation=true&number=100`);
 
     const diet = allData.data.results.map(elemento => elemento.diets)
     const diet2 = []

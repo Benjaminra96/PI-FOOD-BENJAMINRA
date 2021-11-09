@@ -20,11 +20,6 @@ function rootReducer(state = initialState, action) {
                 recipes: action.payload
             }
         case 'FILTER_BY_DIET':
-            // const allRecipes = state.allRecipes
-            // const statusFiltered = action.payload === 'All' ? allRecipes : allRecipes.filter(el => el.diets === action.payload)
-            // return {
-            //     ...state,
-            //     recipes: statusFiltered
             const allRecipes = state.allRecipes
             const dietsAPI = []
             const dietsDB = []
@@ -50,11 +45,11 @@ function rootReducer(state = initialState, action) {
             return {
                 ...state
             }
-        case 'GET_RECIPES':
-            return {
-                ...state,
-                recipes: action.payload
-            }
+        // case 'GET_RECIPES':
+        //     return {
+        //         ...state,
+        //         recipes: action.payload
+        //     }
         case 'FILTER_CREATED':
             const createdFilter = action.payload === 'created' ? state.allRecipes.filter(el => el.createdInDB) : state.allRecipes.filter(el => !el.createdInDB)
             return {

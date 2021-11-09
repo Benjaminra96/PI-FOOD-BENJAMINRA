@@ -12,126 +12,303 @@
     top: 30px;
     left: 250px;
     animation: rollOut 2s ease-in-out alternate-reverse infinite;
-}
-.n{
+} */
+
+.n {
     font-size: 15px;
     font-family: monospace;
     position: absolute;
+    font-weight: bolder;
     left: 3px;
-    top:1px;
+    top: 1px;
+    width: 35%;
+    border-color: midnightblue;
+}
+
+.i1 {
+    border: double midnightblue;
+    display: inline-block;
+    background-color: lavender;
+    box-sizing: border-box;
     width: 100%;
 }
-.r{
+
+.r {
     font-size: 15px;
     font-family: monospace;
     position: absolute;
-    left:3px;
-    top:50px;
-    width: 30%;
+    font-weight: bolder;
+    left: 3px;
+    top: 50px;
+    width: 35%;
 }
-.s{
-    font-size: 15px;
-    font-family: monospace;
-    position: absolute;
-    left:3px;
-    top:100px;
-    width: 30%;
+
+.i2 {
+    border: double midnightblue;
+    display: inline-block;
+    background-color: lavender;
+    box-sizing: border-box;
+    width: 100%;
 }
-.HS{
+
+.s {
     font-size: 15px;
     font-family: monospace;
+    font-weight: bolder;
     position: absolute;
-    left:3px;
-    top:150px;
-    width: 30%;
+    left: 3px;
+    top: 100px;
+    width: 35%;
 }
-.SbS{
-    font-size: 15px;
-    font-family: monospace;
-    position: absolute;
-    left:3px;
-    top:200px;
-    width: 30%;
+
+.i3 {
+    border: double midnightblue;
+    display: inline-block;
+    background-color: lavender;
+    box-sizing: border-box;
+    width: 80%;
 }
-.i{
+
+.HS {
     font-size: 15px;
     font-family: monospace;
+    font-weight: bolder;
     position: absolute;
-    left:3px;
-    top:250px;
-    width: 30%;
+    left: 3px;
+    top: 150px;
+    width: 35%;
+}
+
+.i4 {
+    border: double midnightblue;
+    display: inline-block;
+    background-color: lavender;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.SbS {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bolder;
+    position: absolute;
+    left: 3px;
+    top: 200px;
+    width: 35%;
+}
+
+.i5 {
+    border: double midnightblue;
+    display: inline-block;
+    background-color: lavender;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.i {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bolder;
+    position: absolute;
+    left: 3px;
+    top: 250px;
+    width: 35%;
+}
+
+.i6 {
+    border: double midnightblue;
+    display: inline-block;
+    background-color: lavender;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .btncr {
     font-family: monospace;
-    font-size: large;
-    font-weight: bold;
+    font-size: larger;
+    font-weight: bolder;
     color: midnightblue;
-    border: 1.5px dotted midnightblue;
-    background-color: ivory;
+    border: 3.5px double midnightblue;
+    background-color: lavender;
     position: absolute;
     animation: shake 2s alternate-reverse ease-in-out infinite;
     width: 35%;
-    bottom: 1.5px;
-    right: 1.5px;
-
+    bottom: 15px;
+    right: 180px;
 }
 
 @keyframes shake {
     from {
-        transform: scale(90%);
+        transform: scale(105%);
     }
     to {
-        transform: scale(75%);
+        transform: scale(95%);
     }
 }
-.dt{
+
+.dtframe {
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bolder;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    height: 75%;
+    width: 50%;
+    border: double midnightblue
+}
+
+.dtframe2 {
     font-size: 15px;
     font-family: monospace;
+    font-weight: bold;
     position: absolute;
-    left:3px;
-    top:300px;
-    width: 30%;
+    right: 20px;
+    top: 30px;
+}
 
-} */
+.dtframe3 {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    left: 250px;
+    top: 60px;
+}
+
+.dtframe4 {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 90px;
+}
+
+.dtframe5 {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    left: 250px;
+    top: 120px;
+}
+
+.dtframe6 {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 150px;
+}
+
+.dtframe7 {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    left: 250px;
+    top: 180px;
+}
+
+.dtframe8 {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 210px;
+}
+
+.dtframe9 {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    left: 250px;
+    top: 240px;
+}
+
+.dtframe10 {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 270px;
+}
+
 .formframe {
     width: 500px;
-    height: 70%;
-    background-color: aliceblue;
-    border: 3.5px double midnightblue;
+    height: 50%;
+    background-color: lightsteelblue;
+    border: 8px double midnightblue;
     font-family: monospace;
     font-size: medium;
     color: midnightblue;
     margin: 8px;
     padding: 5px;
     position: absolute;
-    top: 30px;
-    left: 250px;
-    animation: rollOut 2s ease-in-out alternate-reverse infinite;
-    justify-content: space-between;
+    top: 100px;
+    left: 31%;
 }
-
-
 
 .botn {
     font-family: monospace;
     font-size: large;
     font-weight: bold;
     color: midnightblue;
-    border: 1.5px dotted midnightblue;
-    background-color: ivory;
+    border: 1.5px double midnightblue;
+    background-color: lavender;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 8px;
+    left: 20px;
     animation: shake 2s alternate-reverse ease-in-out infinite;
-    width: 10%;
+    width: 6%;
 }
 
 @keyframes shake {
     from {
-        transform: scale(90%);
+        transform: scale(100%);
     }
     to {
-        transform: scale(75%);
+        transform: scale(95%);
     }
+}
+
+.img1 {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 25%;
+    opacity: 85%;
+    border-radius: 88%;
+}
+
+.img2 {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 33%;
+    opacity: 90%;
+    border: inset 7.5px;
+}
+
+.img3 {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    width: 25%;
+    opacity: 85%;
+    border-radius: 85%;
+}
+
+.img4 {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    width: 33%;
+    opacity: 90%;
+    border: outset 7.5px;
 }
