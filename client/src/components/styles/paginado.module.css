@@ -1,0 +1,19 @@
+ul{
+  list-style-type:none;
+  text-align: center ;
+  display: inline-flex;
+}
+
+li{
+  color: midnightblue;
+  background-color:aliceblue;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  width: 5em;
+  border: 1.5px solid darkblue;
+  cursor: pointer;
+}
+
+
+  

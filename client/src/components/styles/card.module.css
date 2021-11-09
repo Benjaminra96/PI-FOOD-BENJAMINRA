@@ -1,0 +1,33 @@
+.contenedor {
+    width: 350px;
+    background-color:aliceblue;
+    border: 2px solid skyblue;
+    margin: 8px;
+    padding: 5px;
+}
+
+.diettype {
+    background-color:aqua;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    align-items: center;
+    color:midnightblue
+    
+}
+
+.title {
+    background-color:aqua;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    align-items: center;
+    text-decoration: none;
+    color: midnightblue;
+}
+
+.pic {
+    align-content: center;
+    border-radius: 65%;
+}
+  

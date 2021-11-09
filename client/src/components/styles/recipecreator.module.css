@@ -1,0 +1,137 @@
+/* .formframe {
+    width: 500px;
+    height: 70%;
+    background-color: aliceblue;
+    border: 3.5px double midnightblue;
+    font-family: monospace;
+    font-size: medium;
+    color: midnightblue;
+    margin: 8px;
+    padding: 5px;
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    animation: rollOut 2s ease-in-out alternate-reverse infinite;
+}
+.n{
+    font-size: 15px;
+    font-family: monospace;
+    position: absolute;
+    left: 3px;
+    top:1px;
+    width: 100%;
+}
+.r{
+    font-size: 15px;
+    font-family: monospace;
+    position: absolute;
+    left:3px;
+    top:50px;
+    width: 30%;
+}
+.s{
+    font-size: 15px;
+    font-family: monospace;
+    position: absolute;
+    left:3px;
+    top:100px;
+    width: 30%;
+}
+.HS{
+    font-size: 15px;
+    font-family: monospace;
+    position: absolute;
+    left:3px;
+    top:150px;
+    width: 30%;
+}
+.SbS{
+    font-size: 15px;
+    font-family: monospace;
+    position: absolute;
+    left:3px;
+    top:200px;
+    width: 30%;
+}
+.i{
+    font-size: 15px;
+    font-family: monospace;
+    position: absolute;
+    left:3px;
+    top:250px;
+    width: 30%;
+}
+
+.btncr {
+    font-family: monospace;
+    font-size: large;
+    font-weight: bold;
+    color: midnightblue;
+    border: 1.5px dotted midnightblue;
+    background-color: ivory;
+    position: absolute;
+    animation: shake 2s alternate-reverse ease-in-out infinite;
+    width: 35%;
+    bottom: 1.5px;
+    right: 1.5px;
+
+}
+
+@keyframes shake {
+    from {
+        transform: scale(90%);
+    }
+    to {
+        transform: scale(75%);
+    }
+}
+.dt{
+    font-size: 15px;
+    font-family: monospace;
+    position: absolute;
+    left:3px;
+    top:300px;
+    width: 30%;
+
+} */
+.formframe {
+    width: 500px;
+    height: 70%;
+    background-color: aliceblue;
+    border: 3.5px double midnightblue;
+    font-family: monospace;
+    font-size: medium;
+    color: midnightblue;
+    margin: 8px;
+    padding: 5px;
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    animation: rollOut 2s ease-in-out alternate-reverse infinite;
+    justify-content: space-between;
+}
+
+
+
+.botn {
+    font-family: monospace;
+    font-size: large;
+    font-weight: bold;
+    color: midnightblue;
+    border: 1.5px dotted midnightblue;
+    background-color: ivory;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    animation: shake 2s alternate-reverse ease-in-out infinite;
+    width: 10%;
+}
+
+@keyframes shake {
+    from {
+        transform: scale(90%);
+    }
+    to {
+        transform: scale(75%);
+    }
+}
