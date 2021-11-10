@@ -40,7 +40,9 @@ function rootReducer(state = initialState, action) {
                     ...state,
                     recipes: find
                 }
-            }
+            };
+            break;
+
         case 'POST_RECIPE':
             return {
                 ...state

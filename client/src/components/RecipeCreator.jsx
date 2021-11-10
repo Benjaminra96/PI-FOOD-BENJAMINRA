@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
-import { getRecipes, getRecipeType, postRecipe } from '../actions';
-import { useDispatch, useSelector } from 'react-redux';
+import { getRecipeType, postRecipe } from '../actions';
+import { useDispatch } from 'react-redux';
 import styles from '../components/styles/recipecreator.module.css';
 import pic1 from '../components/pics/K1.jpeg';
 import pic3 from '../components/pics/K3.jpeg';
@@ -12,7 +12,18 @@ import pic5 from '../components/pics/C3.jpeg';
 export default function RecipeCreator() {
     const dispatch = useDispatch();
     const history = useHistory();
-    const recipeTypes = useSelector((state) => state.recipeTypes);
+    const [err, setErr] = useState({});
+
+    function validate(input) {
+        let err = {};
+        if (!input.name) {
+            err.name = "*Name must be filled*";
+        }
+        if (!input.resume) {
+            err.resume = "*Resume must be filled*";
+        }
+        return err;
+    }
 
     const [input, setInput] = useState({
         name: '',
@@ -29,6 +40,11 @@ export default function RecipeCreator() {
             ...input,
             [e.target.name]: e.target.value
         })
+        setErr(validate({
+            ...input,
+            [e.target.name]: e.target.value,
+    }))
+    
     }
 
     function handleCheck(e) {
@@ -49,9 +65,9 @@ export default function RecipeCreator() {
             resume: '',
             score: '',
             healthylevel: '',
-            stepbystep:'',
+            stepbystep: '',
             image: '',
-            diets:[]
+            diets: []
         })
         history.push('/home')
     }
@@ -62,8 +78,8 @@ export default function RecipeCreator() {
         <div>
             <img className={styles.img1} src={pic1} alt="1"></img>
             <img className={styles.img2} src={pic5} alt="2"></img>
-            <img className={styles.img3}src={pic3} alt="3"></img>
-            <img className={styles.img4}src={pic4} alt="3"></img>
+            <img className={styles.img3} src={pic3} alt="3"></img>
+            <img className={styles.img4} src={pic4} alt="3"></img>
             <NavLink to='/home'><button className={styles.botn}>Back</button></NavLink>
             <form className={styles.formframe} onSubmit={(e) => handleSubmit(e)}>
                 <div className={styles.n}>
@@ -74,6 +90,7 @@ export default function RecipeCreator() {
                         name='name'
                         onChange={(e) => handleChange(e)}
                     />
+                    {err.name && (<p className={styles.err}>{err.name}</p>)}
                 </div>
                 <div className={styles.r}>
                     <label>Resume</label>
@@ -82,6 +99,7 @@ export default function RecipeCreator() {
                         value={input.resume}
                         name='resume'
                         onChange={(e) => handleChange(e)} />
+                    {err.resume && (<p className={styles.err2}>{err.resume}</p>)}
                 </div>
                 <div className={styles.s}>
                     <label>Score</label>

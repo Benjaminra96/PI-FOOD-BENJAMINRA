@@ -10,7 +10,7 @@ export default function Detail(props) {
 
     useEffect(() => {
         dispatch(getDetail(props.match.params.id))
-    }, [dispatch])
+    }, [dispatch, props.match.params.id])
 
     const recipe = useSelector((state) => state.detail);
     console.log(recipe)
@@ -22,8 +22,21 @@ export default function Detail(props) {
                         <h1>{recipe[0].name}</h1>
                         <img className={styles.piK} src={recipe[0].image} alt="" width="200px" height="200px" />
                         <p className={styles.resume}><h5>Resume: {recipe[0].resume.replace(/<[^>]*>?/g, '')}</h5></p>
-                        <h5 className={styles.dt}>Diet Type: {!recipe[0].createdInDB ? recipe[0].diets?.map((diet) => diet) :
-                            recipe[0].DietTypes ? 'N/A' : recipe[0].DietTypes?.map((diet) => diet.name)}</h5>
+                        <h5 className={styles.dt}>Diet Type: {
+                                 recipe[0].diets && recipe[0].diets.length 
+                                 ? 
+                                 recipe[0].diets.map(diet => ` ${diet}. `) 
+                                 : 
+                                 recipe[0].diets 
+                                 ? 
+                                 " No diet-type specified for this recipe, sorry..." 
+                                 :
+                                 recipe[0].DietTypes && recipe[0].DietTypes.length 
+                                 ? 
+                                 recipe[0].DietTypes.map(diet => ` ${diet.name}. `) 
+                                 :
+                                 " No diet-type specified for this recipe, sorry..."
+                            }</h5>
                         <h5 className={styles.s}>Score: {recipe[0].score}</h5>
                         <h5 className={styles.hs}>Healthy level: {recipe[0].healthylevel}</h5>
                         <p className={styles.sbs}>Step by step: {!recipe[0].createdInDB ? recipe[0].stepbystep?.map((step) => step) : recipe[0].stepbystep}</p>

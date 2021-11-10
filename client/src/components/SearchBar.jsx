@@ -26,7 +26,7 @@ export default function SearchBar() {
                 value={name}
                 onChange={(e) => handleInputChange(e)}
         />
-       <button type='submit' onClick={(e) => handleSubmit(e)}>🔎</button>
+       <button type='submit' onClick={(e) => handleSubmit(e)}><span role="img" aria-label="lupa">🔎</span></button>
         </div >
     )
 }
